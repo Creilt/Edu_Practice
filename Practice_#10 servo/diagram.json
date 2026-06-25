@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "author": "Anonymous maker",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 0.6, "left": -0.6, "attrs": {} },
+    {
+      "type": "wokwi-servo",
+      "id": "servo1",
+      "top": 37.4,
+      "left": 366.6,
+      "rotate": 270,
+      "attrs": {}
+    }
+  ],
+  "connections": [
+    [ "uno:3", "servo1:PWM", "green", [ "v-57", "h262.6", "v249.6" ] ],
+    [ "uno:5V", "servo1:V+", "red", [ "v29.3", "h291.2" ] ],
+    [ "uno:GND.3", "servo1:GND", "black", [ "v19.7", "h253" ] ]
+  ],
+  "dependencies": {}
+}
